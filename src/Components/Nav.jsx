@@ -37,7 +37,7 @@ export default function Nav() {
       </div>
       <div className="px-4 md:hidden flex gap-4 relative" >
         <i className="fa-solid fa-magnifying-glass" ></i>
-        <i class="fa-solid fa-bars "  onClick={() => menu? setMenu(false):  setMenu(true)}></i>
+        <i className="fa-solid fa-bars "  onClick={() => menu? setMenu(false):  setMenu(true)}></i>
         <ul className={` right-2 top-6 py-4 w-28 bg-black text-white rounded-xl ${menu? 'absolute': 'hidden'}`}>
           <li className="hover:bg-blue-700 px-4">Home</li>
           <li className="hover:bg-blue-700 px-4">Our Services</li>
