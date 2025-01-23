@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../assets/logo.svg";
 import Button from "../Utilities/Button";
 
 export default function Nav() {
+  const [menu, setMenu] = useState(false);
   return (
-    <nav className="p-4 flex justify-between items-center shadow-lg">
+    <nav className="p-4 flex justify-between items-center shadow-lg" >
       <img className="max-h-7" src={logo} alt="" />
-      <div>
+      <div className="hidden md:flex">
         <ul className="flex items-center gap-4">
           <li>
             <a href="/Home">Home</a>
@@ -33,6 +34,17 @@ export default function Nav() {
           </li>
           <Button color="bg-[#FFA229] " text="Talk an Expert" />
         </ul>
+      </div>
+      <div className="px-4 md:hidden flex gap-4 relative" >
+        <i className="fa-solid fa-magnifying-glass" ></i>
+        <i class="fa-solid fa-bars "  onClick={() => menu? setMenu(false):  setMenu(true)}></i>
+        <ul className={` right-2 top-6 py-4 w-28 bg-black text-white rounded-xl ${menu? 'absolute': 'hidden'}`}>
+          <li className="hover:bg-blue-700 px-4">Home</li>
+          <li className="hover:bg-blue-700 px-4">Our Services</li>
+          <li className="hover:bg-blue-700 px-4">Blog</li>
+          <li className="hover:bg-blue-700 px-4">Contact Us</li>
+        </ul>
+
       </div>
     </nav>
   );

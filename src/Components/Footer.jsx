@@ -26,7 +26,7 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <div className="flex gap-6 flex-col sm:flex-row">
+        <div className="flex gap-6 flex-wrap ">
           <div>
             <h3 className="text-orange-500">START A BUISNESS</h3>
             <ul>

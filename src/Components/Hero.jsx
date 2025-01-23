@@ -8,9 +8,9 @@ import Button from "../Utilities/Button";
 
 export default function Hero() {
   return (
-    <section className="text-center bg-gradient-to-r from-white from-0% via-orange-200 via-20% to-sky-200 to-90%  h-[calc(100vh-128px)]">
+    <section className="text-center pt-8 bg-gradient-to-r from-white from-0% via-orange-200 via-20% to-sky-200 to-90%  h-[calc(100vh-128px)]">
       <div
-        className="flex h-[100%] "
+        className="flex h-[100%]  flex-col md:flex-row justify-between  "
         style={{
           backgroundImage: ` url(${heroBg})`,
           backgroundSize: "contain",
@@ -18,8 +18,7 @@ export default function Hero() {
           backgroundPosition: "bottom",
         }}
       >
-        <div className=" flex items-center w-1/2 ml-7 ">
-          <div>
+        <div className=" flex flex-col  gap-8 md:w-1/2 mx-4 xl:mx-8 ">
             <div>
               <div className="flex items-center gap-4">
                 <i
@@ -60,7 +59,7 @@ export default function Hero() {
                 <b>tax filings</b>, and other <b>legal matters</b>.
               </p>
             </div>
-            <div className="flex gap-8 h-14">
+            <div className="flex flex-col md:flex-row gap-12 h-14">
               <div className="flex gap-2 items-center">
                 <img className="h-[100%]" src={boxStack} alt="" />
                 <div>
@@ -72,7 +71,7 @@ export default function Hero() {
                   </p>
                 </div>
               </div>
-              <div className="flex gap-2 items-center">
+              <div className=" flex gap-2 items-center">
                 <img className="" src={people} alt="" />
                 <div>
                   <p className="text-left  text-sm text-gray-600">
@@ -95,14 +94,13 @@ export default function Hero() {
                 </div>
               </div>
             </div>
-            <div className="flex mt-8  items-center">
+            <div className="hidden md:flex items-center">
               <Button color="bg-[#1C4670] " text="Talk an Expert" />
               <img className="ml-6 mr-2" src={play} alt="" />
               <p className="font-semibold">See how it work's</p>
             </div>
-          </div>
         </div>
-        <div className="w-1/2 hero-bg">
+        <div className="md:w-1/2 hero-bg">
           <div className=" flex justify-end">
             <ul className=" max-w-fit">
               <li className="bg-white rounded-md shadow-xl py-5 my-7 px-6">

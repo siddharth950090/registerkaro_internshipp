@@ -9,7 +9,7 @@ import Footer from "./Footer";
 
 export default function Homepage() {
   return (
-    <div className="bg-white h-16">
+    <div className="max-w-screen-2xl mx-auto ">
       <Top />
       <Nav />
       <Hero />

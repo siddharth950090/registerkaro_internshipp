@@ -27,7 +27,7 @@ export default function Why() {
             </p>
           </div>
         </div>
-        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 mt-10">
+        <div className="flex justify-center flex-wrap gap-4 mt-10">
           <Card
             color="bg-[#FCDDEC]"
             sign={confidential}
@@ -64,10 +64,13 @@ export default function Why() {
           />
         </div>
       </div>
-      <div className="bg-blue-900 text-white flex items-center justify-center  py-8 px-4 md:px-8 gap-4">
-        <div className="w-1/2">
+      <div className="bg-blue-900 text-white sm:flex items-center justify-center  py-8 px-4 md:px-8 gap-4">
+        <div className="sm:w-1/2">
           <div className="my-4">
-            <h1 className="text-4xl font-bold my-2"> Our Video Introductions</h1>
+            <h1 className="text-4xl font-bold my-2">
+              {" "}
+              Our Video Introductions
+            </h1>
             <p className="text-gray-300">
               Velit purus egestas tellus phasellus. Mattis eget sed faucibus
               magna vulputate pellentesque a diam tincidunt apis dui.
@@ -96,9 +99,9 @@ export default function Why() {
             </div>
           </div>
         </div>
-          <div className="w-1/2 ">
-            <img className="w-[100%]" src={video} alt="" />
-          </div>
+        <div className="sm:w-1/2 ">
+          <img className="w-[100%]" src={video} alt="" />
+        </div>
       </div>
     </>
   );
