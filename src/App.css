@@ -1,0 +1,7 @@
+.hero-bg{
+  background-image:  url(./assets/bgSitting.svg), url(./assets/archery.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left bottom, right bottom;
+  background-size: contain, auto;
+
+}
